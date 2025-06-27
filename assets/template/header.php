@@ -1,6 +1,7 @@
 <header class='header'>
     <div class="header-top">
-        <img src="/assets/pictures/rm.png" alt="logo" class="logo">
+        <img src="/assets/pictures/logo.png" alt="logo" class="logo">
+        <h6 class="title">KEEP GOING</h6>
     </div>
     <section class="header-bottom">
         <div class="header-bottom-top">
