@@ -1,0 +1,97 @@
+/* body and header */
+body{
+    font-size: 16px;
+    padding: 0px;
+    background-color: #f8f9fa;
+}
+
+.header{
+    max-height: 278px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.header-top {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.header-top .logo {
+    height: 2rem;
+    width: auto;
+    margin-left: 2rem;
+}
+
+.header img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header-bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 600px;
+}
+
+.header-bottom-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin-bottom: 80%;
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+
+/* body-body */
+h3 {
+    text-align: center;
+    text-shadow: 0 0 3px #7B3E9C;
+}
+
+p {
+
+}
+
+.about {
+    display: flex;
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* footer */
+footer{
+    margin-top: 0%;
+    text-align: center;
+}
+
+.wa {
+    height: 1rem;
+}
