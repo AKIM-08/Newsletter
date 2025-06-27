@@ -22,7 +22,7 @@
     require 'assets/template/header.php' 
     ?>
 
-        <h3>Newsletter</h3>
+    <h3>Newsletter</h3>
     <section class="about">
         <div class="row">
             <div class="col-12 text-truncate">
@@ -44,7 +44,7 @@
     </section>    
     <section>
         <h3>S'inscrire à la newsletter</h3>
-        <form>
+        <form action="/subscribe.php" method="POST" class="form">
             <div class="mb-3">
                 <label class="form-label">Nom</label>
                 <input type="text" class="form-control" required>
@@ -56,12 +56,13 @@
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" required>
-                <label class="form-check-label">Check me out</label>
+                <label class="form-check-label">J'ai lu et j'approuve</label>
             </div>
-            <button type="submit" class="btn btn-primary">S'inscrire</button>
+            <div class="btn">
+                <button type="submit" class="btn btn-primary">S'inscrire</button>
+            </div>
         </form>
     </section>
-   
 
     <?php require 'assets/template/footer.php'  ?>
 </body>
