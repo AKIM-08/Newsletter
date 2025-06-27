@@ -1,0 +1,13 @@
+# Dossiers à ignorer
+node_modules/
+vendor/
+dist/
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.bak
+
+# Config perso
+.env
+.vscode/
