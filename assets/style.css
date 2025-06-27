@@ -12,20 +12,45 @@ body{
 
 .header-top {
     background-color: black;
+    position: relative;
+    width: 100%;
+    height: 6vh;
     display: flex;
     align-items: center;
-    justify-content: left;
 }
+
 .header-top .logo {
-    height: 2rem;
+    position: absolute;
+    height: 3rem;
     width: auto;
     margin-left: 2rem;
+}
+
+.header-top .title {
+    position: absolute;
+    right: 30px;
+    top: 12px;
+    color: #adb5bd;
+    font-size: 13px;
 }
 
 .header img {
     height: 15rem;
     width: 100%;
     object-fit: cover;
+    opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+  .header img {
+    height: 15rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header img {
+    height: 20rem;
+  }
 }
 
 .header-bottom {
@@ -74,8 +99,19 @@ h3 {
     text-shadow: 0 0 3px #7B3E9C;
 }
 
-p {
+.about {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
+.mb-3 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+.btn {
+    margin-left: 3.9rem;
 }
 
 .about {
@@ -90,6 +126,21 @@ p {
 footer{
     margin-top: 0%;
     text-align: center;
+}
+
+.first-footer{
+    position: relative;
+    background-color: black;
+    color: #FFFFFF;
+    width: 100%;
+    height: 10vh;
+    margin-top: 3rem;
+}
+
+.right {
+    position: absolute;
+    bottom: 0.1rem;
+    right: 7rem;
 }
 
 .wa {
