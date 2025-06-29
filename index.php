@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="assets/pictures/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -15,7 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <?php 
+        $title = 'MindFuel';
+        require_once 'utils.php';
+    ?>
+    <title><?= $title ?></title>
 </head>
 <body>
     <?php
@@ -47,11 +52,15 @@
         <form action="/subscribe.php" method="POST" class="form">
             <div class="mb-3">
                 <label class="form-label">Nom</label>
-                <input type="text" class="form-control" required>
+                <input type="text" class="form-control" name="nom" placeholder="John Doe" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Numéro</label>
+                <input type="text" class="form-control" name="numero" placeholder="+225 0101010101" required>
             </div>
             <div class="mb-3">
                 <label class="form-label">Email</label>
-                <input type="email" class="form-control" required>
+                <input type="email" class="form-control" name="email" placeholder="johndoe@gmail.com" required>
                 <div class="form-text">Nous ne partagerons jamais votre addresse élèctronique</div>
             </div>
             <div class="mb-3 form-check">
