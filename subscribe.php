@@ -24,6 +24,8 @@ if (
     || !filter_var($postData['email'], FILTER_VALIDATE_EMAIL)
     || empty($postData['nom'])
     || trim($postData['nom']) === ''
+    || empty($postData['prenom'])
+    || trim($postData['prenom']) === ''
     || empty($postData['numero'])
     || trim($postData['numero']) === ''
     || trim(!preg_match("/^\+\d{1,4} \d{6,15}$/", $postData['numero']))
@@ -39,7 +41,9 @@ if (
     <div class="alert alert-danger">
         <?= $error ?>
     </div>
-    <a style="margin-left:8rem" class="btn btn-primary" href="/index.php" role="button">Reprendre</a>
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-primary text-center" href="/index.php" role="button">Reprendre</a>
+    </div>
 <?php endif ?>
 
 <?php if ($success) : ?>
