@@ -9,5 +9,6 @@ dist/
 *.bak
 
 # Config perso
-.env
+.env.php
 .vscode/
+/vendor/
