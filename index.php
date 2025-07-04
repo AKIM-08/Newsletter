@@ -78,12 +78,11 @@
                     <label class="form-check-label">J'ai lu et j'approuve</label>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary "><i class="bi bi-person-add"></i> S'inscrire</button>
+                    <button type="submit" name='submit' class="btn btn-primary "><i class="bi bi-person-add"></i> S'inscrire</button>
                 </div>
             </form>
         </div>
     </section>
-
     <?php require 'assets/template/footer.php'  ?>
 </body>
 </html>
