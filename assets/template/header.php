@@ -1,3 +1,4 @@
+// header fait à l'aide de classes bootstrap 
 <header class="header">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-0 fixed-top">
         <div class="container">
